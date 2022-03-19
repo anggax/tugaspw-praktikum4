@@ -1,0 +1,22 @@
+body{
+	text-align: center;
+	background-color: #11151c;
+}
+h1{
+	font-family: trueno;
+	font-size: 26px;
+	color: #fff;
+}
+.kotak{
+	position: absolute;
+	left: 38%;
+	display: flex;
+	cursor: pointer;
+}
+.kotak p{
+	width:60px;
+   	height:60px;
+   	background-color:yellow; 
+   	border-radius: 8px;
+   	margin-right: 20px;
+}

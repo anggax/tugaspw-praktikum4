@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hideandshow</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$(".hide").click(function(){ $("#foto1").hide("slow");
+		$(".show").click(function(){ $("#foto1").show("slow");
+		});
+		});
+		$(".sembunyi").click(function(){ $("#foto2").hide("slow");
+		$(".tampil").click(function(){ $("#foto2").show("slow");
+		});
+		});
+		});
+	</script>
+	<style type="text/css">
+		body{
+			background-color: #11151c; text-align: center;
+			font-family: trueno;
+		}
+		h1{
+			color: #fff;
+			font-size: 26px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Menyembunyikan / Menampilkan Gambar</h1>
+	<div class="btn">
+	<button class="hide">Hide</button>
+	<button class="show">Show</button> <br><br>
+	<button class="sembunyi">Hide</button>
+	<button class="tampil">Show</button> <br><br>
+	</div>
+	<div class="pict">
+	<img id="foto1" src="eva.png" height="300" width="300">
+	<img id="foto2" src="shinji.png" height="300" width="300">
+	</div>	
+</body>
+</html>

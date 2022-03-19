@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Effect Fade</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$(".rect").fadeOut('slow');
+		});
+		$("#btn2").click(function(){
+			$(".rect").fadeIn('slow');
+		});
+		$("#btn3").click(function(){
+			$(".rect").fadeTo('slow', 0.30);
+		});
+	});
+	</script>
+	<style type="text/css">
+		body{
+			background-color: #11151c;
+			font-family: trueno;
+		}
+		h1{
+			font-size: 26px;
+			color: #fff;
+		}
+		.rect{
+			width: 200px; height: 200px;
+			margin-bottom: 12px;
+			background: yellow;
+			border-radius: 8px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Fading In / To / Out</h1>
+	<div class="rect">
+		<p id="rect"></p>
+	</div>
+	<div class="button">
+		<input id="btn1" type="button" value="Fade out">
+		<input id="btn2" type="button" value="Fade in">
+		<input id="btn3" type="button" value="Fade to">
+	</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Event Double Click</title>
+	<link rel="stylesheet" type="text/css" href="2-dbc.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+        $("#square1").dblclick(function(){    
+           $("#square1").css("background-color", "red");     
+        }); 
+        $("#square2").dblclick(function(){    
+           $("#square2").css("background-color", "red");            
+        });
+        $("#square3").dblclick(function(){    
+           $("#square3").css("background-color", "red");            
+        }); 
+        $( "#square4" ).dblclick(function(){    
+           $("#square4").css("background-color", "red");            
+        });  
+           });
+	</script>
+</head>
+<body>
+<h1>Double Click on The Square and See The Magic</h1>
+<div class="kotak">
+	<p id="square1"></p>
+	<p id="square2"></p>
+	<p id="square3"></p>
+	<p id="square4"></p>
+</div>
+</body>
+</html>
