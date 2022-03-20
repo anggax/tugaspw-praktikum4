@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$("#daftar").addClass("merahkuning");
+		$(".subdaftar").addClass("kuninghitam");
+		});
+	</script>
+	<style type="text/css">
+		.merahkuning{
+			color: red;
+			font-weight: bold;
+			background-color: yellow;
+			padding: 3px;
+		}
+		.kuninghitam{
+			color: yellow;
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>Paragraf Pertama</p>
+	</div>
+	<div>
+		<ul id="daftar">
+			<li>item 1</li>
+			<li class="subdaftar">item 2</li>
+			<li>item 3</li>
+		</ul>
+</body>
+</html>
